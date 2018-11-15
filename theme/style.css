@@ -1,0 +1,248 @@
+/*------------------------------------*\
+    youcanyouup.info
+    by @thirtyjin
+
+    Theme name: thirtyjin
+    Theme author: @thirtyjin
+
+    Based on Apaxy by @adamwhitcroft
+
+\*------------------------------------*/
+
+* {
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	       box-sizing: border-box;
+}
+
+html {
+	min-height:100%;
+	border: 20px solid #ECEEF1;
+	border-top: 0px;
+	border-bottom: 0px;
+	color:#61666c;
+	font-weight:400;
+	font-size:1em;
+	font-family: PingFang SC, Microsoft YaHei, Arial, Hiragino Sans GB, Helvetica, Tahoma, Arial sans-serif;
+	line-height:2em;
+	background: #ECEEF1;
+}
+body {
+	padding: 0px;
+	-webkit-backface-visibility:hidden;
+	background: #fff;
+}
+code {
+	font-family:consolas,monospace;
+}
+a {
+	color:#61666c;
+	text-decoration:none;
+}
+a, img {
+        border:none;
+        outline:none
+}
+a:hover {
+	color:#2a2a2a;
+}
+
+/*------------------------------------*\
+    header
+\*------------------------------------*/
+header {
+	margin:0 auto;
+	padding: 0;
+	/* max-width: 100%; */
+	background: #ECEEF1;
+}
+
+#logo {
+	display: inline-block;
+	/* font-size: 24px; */
+	/* line-height: 30px; */
+	font-weight: normal;
+	padding: 0 0px 0 70px;
+	margin: 0 auto;
+	background-image: url(img/logo.svg);
+	background-repeat: no-repeat;
+	background-size: 60px 14px;
+	background-position: left center;
+}
+/*------------------------------------*\
+    Wrapper
+\*------------------------------------*/
+.wrapper {
+	/* margin:0 auto; */
+	padding: 30px;
+	/* max-width: 80%; */
+	display: block;
+}
+/*------------------------------------*\
+    Demo block
+\*------------------------------------*/
+.menu {
+	display: block;
+	font-size:.875em;
+	/* margin:20px 0; */
+	padding: 15px 0;
+	color:#9099A3;
+	line-height: 30px;
+}
+
+.menu span {
+	margin:0px 5px;
+}
+
+.menu a:hover{
+	color: #3998FC;
+}
+
+
+/*------------------------------------*\
+    SearchTable
+\*------------------------------------*/
+
+.search-bar {
+		position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+		padding: 5px 0;
+		background: #ffffff;
+	  margin-bottom: 0.75rem;
+}
+
+
+#searchInput {
+  display: block;
+  padding: 0.5rem 0.75rem;
+	padding-left: 34px;
+	background-image: url(img/search.svg);
+	background-repeat: no-repeat;
+	background-size: 14px 14px;
+  background-color: #fff;
+  background-clip: padding-box;
+	background-position: 10px center;
+  font-size: 0.85rem;
+  line-height: 1.25;
+  color: #464a4c;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  -webkit-appearance: textfield;
+	width: 100%;
+}
+
+#searchInput:focus {
+  border-color: #3998FC;
+	background-image: url(img/search-focus.svg);
+  outline: 0;
+}
+
+::placeholder {
+    color: #CCCCCC;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #CCCCCC;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #CCCCCC;
+}
+
+/*------------------------------------*\
+    Table (directory listing)
+\*------------------------------------*/
+table {
+	width:100%;
+	border-collapse:collapse;
+	font-size:.875em;
+}
+tr {
+	outline:0;
+	border:0;
+}
+tr:hover td {
+	background: #f6f6f6;
+
+}
+th {
+	text-align:left;
+	font-size:.75em;
+	padding-right:20px;
+	background: #f6f6f6;
+	border-bottom: 1px solid #edf1f5;
+}
+/* 2nd Column: Filename */
+th + th {
+	width:65%;
+}
+/* 3rd Column: Last Modified */
+th + th + th {
+}
+/* 4th Column: Size */
+th + th + th + th {
+	width:5%;
+}
+tr td:first-of-type {
+	padding-left:10px;
+	padding-right:10px;
+}
+tr td:nth-child(3),
+tr td:nth-child(4) {
+	font-size: 12px;
+	color: #CCCCCC;
+}
+
+td {
+	padding:5px 0;
+	outline:0;
+	border:0;
+	border-bottom:1px solid #edf1f5;
+	vertical-align:middle;
+	text-align:left;
+	-webkit-transition:background 300ms ease;
+	   -moz-transition:background 300ms ease;
+	    -ms-transition:background 300ms ease;
+	     -o-transition:background 300ms ease;
+	        transition:background 300ms ease;
+}
+td img {
+	width: 16px;
+	height: 16px;
+}
+td a{
+	display: block;
+}
+tr.parent a[href^="/"] {
+	color:#9099A3;
+}
+	.parent a[href^="/"]:hover {
+		color:#2281d0;
+	}
+
+
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+.footer {
+	text-align: left;
+	font-size:.85em;
+	/* max-width:80%; */
+	margin: 0px auto;
+	padding: 10px 0px;
+	background: #ECEEF1;
+}
+
+
+
+
+@media (max-width: 575.98px) {
+	tr th:nth-child(3),
+  tr td:nth-child(3) {
+		display: none;
+	}
+}
